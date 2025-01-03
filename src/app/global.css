@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #01011c;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #01011c;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-background-image: -webkit-linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    background-image: linear-gradient(to bottom, #fa709a 0%, #fee140 100%);
+    border-radius: 3px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0.2rem;
+}
+
+.menu h1 {
+    font-family: "Akaya Kanadaka", serif;
+    font-size: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    background: none;
+    border-radius: 0.75rem;
+    border-bottom: 0.2rem solid #07ff72;
+    font-size: 18px;
+    transition: all 0.8s;
+}
+
+.menu a:hover {
+    background-color: rgba(12, 175, 255, 0.9);
+}
+
+.menu h1 {
+    color: white;
+}
+
+.menu * {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.menu *:first-child {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .menu *:first-child {
+        margin-top: 15rem;
+    }
+}

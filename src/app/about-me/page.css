@@ -1,0 +1,119 @@
+.aboutmepage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.aboutmepage .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(35deg, #ed9a1d, #ff7e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutmepage .title p {
+    margin-left: 0.75vw;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.aboutmepage .title svg {
+    stroke: #ed9a1d;
+}
+
+.aboutmepage img.logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.aboutmepage .box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.aboutmepage .box p {
+    display: inline-block;
+    margin: 0;
+}
+
+.aboutmepage .box p a {
+    text-decoration: none;
+    color: #0c6dff;
+    background-color: transparent;
+    border-bottom: 0.2rem solid transparent;
+    transition: all 0.4s;
+}
+
+.aboutmepage .box p a:hover {
+    color: #0CAFFF;
+}
+
+.aboutmepage .box .special {
+    color: #07ff72;
+    margin: 0;
+}
+
+.aboutmepage .box .technologiesbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    min-width: min-content; /* Add this if you still want a minimum width */
+    padding: 0.5rem;
+    border: 2px solid #0CAFFF;
+    border-radius: 5px;
+    gap: 1rem;
+    flex-wrap: wrap; /* Add this to allow items to wrap to next line */
+}
+
+.aboutmepage .box .technologiesbox svg, object {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.aboutmepage .box .technologiesbox svg:hover, object:hover {
+    transform: translateY(-0.1rem);
+    color: #0CAFFF;
+}
+
+.aboutmepage .box .technologiesbox div .hoverBar {
+    position: absolute;
+    transition: all 0.4s;
+
+    opacity: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #3f3f40;
+    border-radius: 1rem;
+    font-size: 24px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.aboutmepage .box .technologiesbox div svg:hover ~ .hoverBar,
+.aboutmepage .box .technologiesbox div object:hover ~ .hoverBar {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 630px) {
+    .aboutmepage .box .technologiesbox div .hoverBar {
+        margin-right: 1rem;
+    }
+}

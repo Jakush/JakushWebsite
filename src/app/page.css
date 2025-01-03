@@ -1,0 +1,329 @@
+.mainpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  height: 99vh;
+}
+
+.mainpage .card {
+  background-color: #1f1f32;
+
+  #width: clamp(180px, 1200px, 500px);
+  width: 40vw;
+  border-radius: 10px;
+
+  padding: clamp(10px, 20px, 20px) 0 clamp(10px, 30px, 30px) 0;
+
+  animation: gradientRotate 8s linear infinite;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainpage .card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mainpage .card {
+    width: 100%;
+  }
+}
+
+.mainpage .card h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.mainpage .card .box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.mainpage .card .box p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.mainpage .card .box h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: darkgray;
+}
+
+.mainpage .card .contact {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  font-family: 'Poppins', sans-serif;
+
+  height: 60px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  color: white;
+
+  padding: 20px 0 0 0;
+  border-radius: 10px;
+
+  transition: all 0.4s;
+}
+
+.mainpage .card .contact i {
+  font-size: 24px;
+  margin: 0 0.5vw 0 1vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainpage .card {
+    margin-top: 15rem;
+  }
+
+  .mainpage .card .contact i {
+    margin: 0 0.5vw 0 2vw;
+  }
+}
+
+.mainpage .card .contact p {
+  display: inline;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.mainpage .card .contact .wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-top: -8px;
+  margin-left: 0.5vw;
+}
+
+.mainpage .card .contact .wrapper svg {
+  display: inline;
+  margin-left: 0.5vw;
+}
+
+.mainpage .card .contact .wrapper p {
+  margin-left: 0.5vw;
+}
+
+.mainpage .card a {
+  text-decoration: none;
+  text-underline: none;
+}
+
+.mainpage .card .contact:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 255px) {
+  .mainpage .card .contact .wrapper svg {
+    margin-left: 6px;
+  }
+
+  .mainpage .card .contact .wrapper p {
+    font-size: 15px;
+    margin-left: 4px;
+  }
+}
+
+/**
+Specific implementations
+ */
+
+/* mail */
+.mainpage .card .contact.mail {
+  background: linear-gradient(69deg, #1479dd, #5ebedc) 84% 0;
+  animation: none;
+  transition: all 0.4s;
+}
+
+.mainpage .card .contact.mail:hover {
+  background: linear-gradient(69deg, #1479dd, #5ebedc) 84% 0;
+  background-size: 400% 400%;
+
+  -webkit-animation: mailanimation 14s ease infinite;
+  -moz-animation: mailanimation 14s ease infinite;
+  -o-animation: mailaanimation 14s ease infinite;
+  animation: mailanimation 14s ease infinite;
+}
+
+/* mail animation */
+@-webkit-keyframes mailanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-moz-keyframes mailanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-o-keyframes mailanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@keyframes mailanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+
+/* instagram */
+.mainpage .card .contact.instagram {
+  background: linear-gradient(69deg, #f51b0f, #efb109) 84% 0;
+  animation: none;
+  transition: all 0.4s;
+}
+
+.mainpage .card .contact.instagram:hover {
+  background: linear-gradient(69deg, #f51b0f, #efb109) 84% 0;
+  background-size: 400% 400%;
+
+  -webkit-animation: instagramanimation 14s ease infinite;
+  -moz-animation: instagramanimation 14s ease infinite;
+  -o-animation: instagramanimation 14s ease infinite;
+  animation: instagramanimation 14s ease infinite;
+}
+
+@-webkit-keyframes instagramanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-moz-keyframes instagramanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-o-keyframes instagramanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@keyframes instagramanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+
+/* discord */
+.mainpage .card .contact.discord {
+  background: linear-gradient(69deg, #0042e8, #5a87e3) 84% 0;
+  animation: none;
+  transition: all 0.4s;
+}
+
+.mainpage .card .contact.discord:hover {
+  background: linear-gradient(69deg, #0042e8, #5a87e3) 84% 0;
+  background-size: 400% 400%;
+
+  -webkit-animation: discordanimation 14s ease infinite;
+  -moz-animation: discordanimation 14s ease infinite;
+  -o-animation: discordanimation 14s ease infinite;
+  animation: discordanimation 14s ease infinite;
+}
+
+@-webkit-keyframes discordanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-moz-keyframes discordanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-o-keyframes discordanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@keyframes discordanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+
+/* github */
+.mainpage .card .contact.github {
+  background: linear-gradient(69deg, #e87e00, #4d5056, #e4e7ee) 84% 0;
+  animation: none;
+  transition: all 0.4s;
+}
+
+.mainpage .card .contact.github:hover {
+  background: linear-gradient(69deg, #e87e00, #4d5056, #e4e7ee) 84% 0;
+  background-size: 600% 600%;
+
+  -webkit-animation: githubanimation 14s ease infinite;
+  -moz-animation: githubanimation 14s ease infinite;
+  -o-animation: githubanimation 14s ease infinite;
+  animation: githubanimation 14s ease infinite;
+}
+
+@-webkit-keyframes githubanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-moz-keyframes githubanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@-o-keyframes githubanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}
+@keyframes githubanimation {
+  0%{background-position:84% 0
+  }
+  50%{background-position:17% 100%}
+  100%{background-position:84% 0
+  }
+}

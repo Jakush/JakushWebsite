@@ -1,0 +1,137 @@
+/* Projects page */
+.projectspage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.projectspage .category .title {
+    background: linear-gradient(35deg, #0CAFFF, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projectspage .category h1.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectspage .category .title p {
+    display: inline;
+    margin-left: 0.75vw;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.projectspage .category .title svg {
+    color: #3398DB;
+}
+
+.projectspage .project {
+    background-color: #1f1f32;
+    width: 60vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+    border-radius: 8px;
+    border-left: #0CAFFF solid 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectspage .project:not(:first-child) {
+    margin-top: 2vh;
+}
+
+.projectspage .project p.title {
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 20px 0 20px;
+    margin-left: 0;
+}
+
+.projectspage .project h4.timeframe {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6062a1;
+    margin: 0 0 20px 20px;
+}
+
+.projectspage .project p.description {
+    padding: 0 20px 0 20px;
+}
+
+.projectspage .project hr.line {
+    width: 97%;
+    border: none;
+    border-top: 1px solid #034694;
+    padding: 0 0 0.25vh 0;
+}
+
+.projectspage .commission {
+    background-color: #1f1f32;
+    width: 60vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+    border-radius: 8px;
+    border-left: #fffb0c solid 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectspage .commission p.title {
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 20px 0 20px;
+    margin-left: 0;
+}
+
+.projectspage .commission p.title i {
+    display: inline;
+}
+
+.projectspage .commission p.description {
+    padding: 0 20px 0 20px;
+}
+
+.projectspage .commission .reviewbox {
+    color: #4497b1;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+
+.projectspage .commission .reviewbox .author {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projectspage .commission .reviewbox .review {
+    margin-top: -2vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .projectspage .project {
+        width: 85%;
+    }
+
+    .projectspage .commission {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projectspage .project {
+        width: 95%;
+    }
+
+    .projectspage .commission {
+        width: 95%;
+    }
+}
