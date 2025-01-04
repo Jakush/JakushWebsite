@@ -14,7 +14,6 @@ import {
     IconCoffee, IconMan
 } from "@tabler/icons-react";
 import {TechnologyIcon} from "@/components/TechnologyIcon";
-import Image from "next/image";
 
 export default function App() {
     return (
