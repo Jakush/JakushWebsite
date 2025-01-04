@@ -24,8 +24,7 @@ export default function App() {
                     <IconMan size="32" />
                     <p>About Me</p>
                 </h1>
-                {/* Works on github */}
-                <img src="JakushWebsite/avatar2.jpg" alt="logo" className="logo" width={160} height={160} />
+                <img src="https://jakush.github.io/JakushWebsite/avatar2.jpg" alt="logo" className="logo" width={160} height={160} />
                 <div className="box">
                     <p>Hey, my name is <span className="special">Jakub Šulc</span> and I can be known by my nickname <span className="special">Jakush</span> or <span className="special">Jakush.Dev</span>.
                         I am 16 years old Developer which I put into every project I do. My goals and my motivation is to
