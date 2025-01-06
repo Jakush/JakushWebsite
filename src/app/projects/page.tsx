@@ -1,18 +1,41 @@
 import "./page.css"
-import {IconBomb} from "@tabler/icons-react";
-import {ProjectCard} from "@/components/ProjectCard";
+import {IconBomb, IconPigMoney} from "@tabler/icons-react";
+import {ProjectCard, ProjectCardActive} from "@/components/ProjectCard";
 import {Menu} from "@/components/Menu";
+import {Commission} from "@/components/Commission";
 
 function App() {
     return (
         <div>
             {Menu()}
             <div className="projectspage">
-                <div className="category mb-20">
+                <div className="category">
                     <h1 className="title mt-12">
                         <IconBomb size="32"/>
                         <p>Projects</p>
                     </h1>
+                    <ProjectCardActive
+                        projectName="BatCore.eu"
+                        timeFrame="2024-2025"
+                        description="Hosting různých služeb jako je Minecraft server, VPS a další. Tento projekt se nedávno znovu rozjel a po nabídce jsem
+                                    souhlasil a nastoupil jsem jako Zákaznická Podpora 11. listopadu. Projekt existoval již dříve cca po dobu 2-3 let,
+                                    ale pak se rozpadl jelikož se vedení nepohodlo. Již dříve hosting poskytoval různé služby jako je Minecraft server
+                                    nebo VPS, po znovu spuštění projektu se v tomto pokračuje. Aktuálně spíše zastavám funkce podpory na ticketech, když je
+                                    třeba a občasně píšu i nějaké návody pro uživatele hostingu."
+                    />
+                    <ProjectCardActive
+                        projectName="LearnSpigot"
+                        timeFrame="2024-2025"
+                        description="Kurz, učící programování za pomocí Javy s knihovnami jako je Spigot, Paper, Bungeecord.
+                                    Mimo jiné má tento kurz i Discord, na kterém můžou účastníci kurzu požádat například o pomoc
+                                    v Javě nebo ohledně jiných problémů týkajících se povětšinou počítačů. Na tomto Discordu
+                                    (pokud pomineme, že jsem byl již dříve v týmu pro podporu, ale pak mi byl smazán
+                                    Discord účet a později mi to bylo zrovna nabídnuto).
+                                    jsem nastoupil jako Trial Helper (zkušební helper) dne 29. října a později dne
+                                    7. listopadu téhož roku, jsem byl povýšen na Helpera za aktivitu. Kurz si již zakoupilo
+                                    přes 10 tis. a jedním z nich jsem byl i dříve já, jelikož tento kurz mě naučil v mém
+                                    prvním programovacím jazyku, který jsem se začal učit."
+                    />
                     <ProjectCard
                         projectName="Survival-Games.cz"
                         timeFrame="2023-2024"
@@ -67,41 +90,19 @@ function App() {
                                 ale uvedl mě do světa Minecraft projektů, co se týče menší orientace okolo pluginů."
                     />
                 </div>
-                {/*
                 <div className="category">
-                    <h1 className="title spacexl">
+                    <h1 className="title mt-12 mb-4">
                         <IconPigMoney size="32"/>
                         <p>Commissions</p>
                     </h1>
-                    <div className="commission">
-                        <p className="title">Example Project</p>
-                        <p className="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
-                            auctor.
-                            Nullam
-                            faucibus mi quis velit. Fusce consectetuer risus a nunc. Cum sociis natoque penatibus et
-                            magnis
-                            dis
-                            parturient montes, nascetur ridiculus mus. Nulla est. Vivamus ac leo pretium faucibus. Etiam
-                            quis
-                            quam. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aliquam
-                            erat
-                            volutpat.
-                        </p>
-                        <div className="reviewbox">
-                            <p className="author">Example Author</p>
-                            <p className="review">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
-                                Aenean id metus id velit ullamcorper pulvinar.
-                                Nullam faucibus mi quis velit.
-                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-                                repellendus.
-                            </p>
-                        </div>
-                    </div>
+                    <Commission
+                        projectTitle="StaffMode Minecraft Plugin"
+                        projectDescription="Minecraft plugin, s funkcemi Vanish, Launcher, Random TP, Invsee, CPS, KB Stick, Freeze a Disguise, které
+                                            byly jako itemy, které šlo získat příkazem /staff a odstranit je znovu příkazem /staff."
+                        commissionAuthor="Arciale"
+                        commissionReview="Also if at the beginning he forgot my project because he had other one at the end the result was fantastic and he is avaible for question/support. 4.9 ⭐"
+                    />
                 </div>
-                */}
             </div>
         </div>
     );

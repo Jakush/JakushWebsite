@@ -7,6 +7,10 @@
     color: white;
 }
 
+.projectspage div.category:last-child {
+    margin-bottom: 2rem;
+}
+
 .projectspage .category .title {
     background: linear-gradient(35deg, #0CAFFF, white);
     -webkit-background-clip: text;
@@ -42,6 +46,29 @@
     border-left: #0CAFFF solid 8px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.projectspage .project.active {
+    animation: 3s linear 0s infinite projectLedge;
+    background-color: #33334c;
+}
+
+@keyframes projectLedge {
+    0% {
+        border-left: #0cff61 solid 8px;
+    }
+    50% {
+        border-left: #0c9aff solid 8px;
+    }
+    100% {
+        border-left: #0cff61 solid 8px;
+    }
+}
+
+.projectspage .project:hover {
+    transform: scale(1.025);
 }
 
 .projectspage .project:not(:first-child) {
@@ -84,6 +111,12 @@
     border-left: #fffb0c solid 8px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.projectspage .commission:hover {
+    transform: scale(1.025);
 }
 
 .projectspage .commission p.title {
@@ -110,10 +143,6 @@
 .projectspage .commission .reviewbox .author {
     font-size: 20px;
     font-weight: bold;
-}
-
-.projectspage .commission .reviewbox .review {
-    margin-top: -2vh;
 }
 
 @media only screen and (max-width: 900px) {

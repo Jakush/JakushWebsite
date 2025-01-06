@@ -13,3 +13,11 @@ export function ProjectCard({projectName, timeFrame, description}: ProjectCardPr
         <p className="description">{description} </p>
     </div>
 }
+
+export function ProjectCardActive({projectName, timeFrame, description}: ProjectCardProps): JSX.Element {
+    return <div className="project active">
+        <p className="title">{projectName}</p>
+        <h4 className="timeframe">{timeFrame}</h4>
+        <p className="description">{description} </p>
+    </div>
+}
