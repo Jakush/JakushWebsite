@@ -13,32 +13,32 @@ interface Experience {
 
 const experiences: Experience[] = [
     {
-        title: "Junior Developer",
-        company: "Old Corp",
-        from: "2021",
-        to: "2022",
-        description: "Lorem ipsum dolor sit amet...",
+        title: "Technical Support Specialist",
+        company: "BatCore.eu",
+        from: "2024",
+        to: "2025",
+        description: "Customer support for a hosting provider (Minecraft servers, VPS). Handling support tickets, assisting customers with technical issues, and writing user documentation and guides.",
     },
     {
-        title: "Software Engineer",
-        company: "Mid Corp",
-        from: "2023",
-        to: "2024",
-        description: "Lorem ipsum dolor sit amet...",
-    },
-    {
-        title: "Software Engineer",
-        company: "Mid Corp",
-        from: "2023",
-        to: "2024",
-        description: "Lorem ipsum dolor sit amet...",
-    },
-    {
-        title: "Technical Developer",
-        company: "Tech Corp",
-        from: "2025",
+        title: "Technical Community Support",
+        company: "LearnSpigot",
+        from: "2024",
         to: "present",
-        description: "Lorem ipsum dolor sit amet...",
+        description: "Providing Java and Spigot-related technical support for a large development course (10k+ students) via Discord. Promoted from Trial Helper to Helper based on activity and reliability.",
+    },
+    {
+        title: "Software Developer",
+        company: "Survival-Games.cz",
+        from: "2023",
+        to: "2024",
+        description: "Developed and maintained custom gameplay features and updates. Implemented major SkyWars updates (kits, abilities, currencies, upgrades), balance changes, bug fixes, and a limited-time UHCRun “Assassins” mode.",
+    },
+    {
+        title: "Software Developer",
+        company: "Rajce.pro",
+        from: "2022",
+        to: "2023",
+        description: "Maintained and extended multiple servers (Survival, Lobby, Anarchy). Built custom Java plugins for moderation, clans, seasonal events, and server utilities; worked with databases and server-side systems.",
     },
 ];
 
