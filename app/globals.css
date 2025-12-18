@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-space-grotesk: var(--font-space-grotesk);
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+  --color-primary-950: var(--color-primary-950);
+  --color-secondary-50: var(--color-secondary-50);
+  --color-secondary-100: var(--color-secondary-100);
+  --color-secondary-200: var(--color-secondary-200);
+  --color-secondary-300: var(--color-secondary-300);
+  --color-secondary-400: var(--color-secondary-400);
+  --color-secondary-500: var(--color-secondary-500);
+  --color-secondary-600: var(--color-secondary-600);
+  --color-secondary-700: var(--color-secondary-700);
+  --color-secondary-800: var(--color-secondary-800);
+  --color-secondary-900: var(--color-secondary-900);
+  --color-secondary-950: var(--color-secondary-950);
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
+  --color-accent-900: var(--color-accent-900);
+  --color-accent-950: var(--color-accent-950);
+  --color-hover-50: var(--color-accent-50);
+  --color-hover-100: var(--color-hover-100);
+  --color-hover-200: var(--color-hover-200);
+  --color-hover-300: var(--color-hover-300);
+  --color-hover-400: var(--color-hover-400);
+  --color-hover-500: var(--color-hover-500);
+  --color-hover-600: var(--color-hover-600);
+  --color-hover-700: var(--color-hover-700);
+  --color-hover-800: var(--color-hover-800);
+  --color-hover-900: var(--color-hover-900);
+  --color-hover-950: var(--color-hover-950);
+  --color-background: var(--color-background);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+
+  /* Primary */
+  --color-primary-50:  #FFE8EC;
+  --color-primary-100: #FFD1DA;
+  --color-primary-200: #FFABBE;
+  --color-primary-300: #FF829F;
+  --color-primary-400: #FA5C82;
+  --color-primary-500: #EF476F; /* base */
+  --color-primary-600: #C63A5C;
+  --color-primary-700: #9C2D49;
+  --color-primary-800: #6E1F33;
+  --color-primary-900: #42131F;
+  --color-primary-950: #260A11;
+
+  /* Secondary */
+  --color-secondary-50:  #E8F8FF;
+  --color-secondary-100: #D2F1FF;
+  --color-secondary-200: #A5E4FF;
+  --color-secondary-300: #78D6FF;
+  --color-secondary-400: #4AC6F7;
+  --color-secondary-500: #30BCED; /* base */
+  --color-secondary-600: #2195C0;
+  --color-secondary-700: #176F8E;
+  --color-secondary-800: #0E4A61;
+  --color-secondary-900: #082D3D;
+  --color-secondary-950: #04171F;
+
+  /* Accent */
+  --color-accent-100: oklch(96.7% 0.001 286.375);
+  --color-accent-200: oklch(92.4% 0.003 286.330);
+  --color-accent-300: oklch(87.1% 0.006 286.286);
+  --color-accent-400: oklch(76.2% 0.011 286.112);
+  --color-accent-500: oklch(55.2% 0.016 285.938);
+  --color-accent-600: oklch(46.1% 0.015 285.872);
+  --color-accent-700: oklch(37.0% 0.013 285.805);
+  --color-accent-800: oklch(29.0% 0.010 285.845);
+  --color-accent-900: oklch(21.0% 0.006 285.885);
+  --color-accent-950: oklch(14.8% 0.004 285.92);
+
+  /* Hover */
+  --color-hover-50:  #E6FFF3;
+  --color-hover-100: #CAFFE7;
+  --color-hover-200: #96FFD0;
+  --color-hover-300: #63FBB6;
+  --color-hover-400: #3EEE9F;
+  --color-hover-500: #32DE8A; /* base */
+  --color-hover-600: #26B56F;
+  --color-hover-700: #1C8954;
+  --color-hover-800: #125D39;
+  --color-hover-900: #0B3723;
+  --color-hover-950: #061D12;
+
+  /* Background */
+  --color-background: #050401;
+}
+
+@layer base {
+  body {
+    @apply text-primary-100 bg-background;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom animations like ripple button effect */
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 600ms linear;
+  background: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
