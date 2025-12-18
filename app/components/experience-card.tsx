@@ -24,7 +24,7 @@ const experiences: Experience[] = [
         company: "LearnSpigot",
         from: "2024",
         to: "present",
-        description: "Providing Java and Spigot-related technical support for a large development course (10k+ students) via Discord. Promoted from Trial Helper to Helper based on activity and reliability.",
+        description: "Providing Java and Spigot-related technical support for a large development course (10k+ students) via Discord.",
     },
     {
         title: "Software Developer",
