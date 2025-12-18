@@ -10,9 +10,6 @@ import {
 } from "@tabler/icons-react";
 import SkillCard from "@/app/components/skill-card";
 import ExperienceCard from "@/app/components/experience-card";
-import ContentCategory from "@/app/components/content-item/content-category";
-import ContentHeader from "@/app/components/content-item/content-header";
-import ContentDividerLine from "@/app/components/content-item/content-divider-line";
 
 const socials = [
     { name: "GitHub", icon: IconBrandGithub, link: "https://github.com/Jakush" },
