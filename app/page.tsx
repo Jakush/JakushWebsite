@@ -19,10 +19,10 @@ const socials = [
 
 export default function HomePage() {
     return (
-        <main className="px-16 mx-auto w-screen min-h-screen">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="sm:col-span-1 border-r border-accent-600 py-10">
-                    <div className="sticky top-1/2 -translate-y-1/2 w-full flex flex-col gap-4 items-center">
+        <main className="px-16 mx-auto w-screen min-h-screen max-md:px-12 max-sm:px-8 max-[300px]:px-1">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-md:flex flex-col">
+                <div className="sm:col-span-1 border-r border-accent-600 py-10 max-md:border-r-0 max-md:border-b max-md:py-8">
+                    <div className="sticky top-1/2 -translate-y-1/2 w-full flex flex-col gap-4 items-center max-md:top-0 max-md:translate-y-0">
                         <Image
                             src="https://cdn.discordapp.com/avatars/742790698407034971/d5f4b428ae04cfcba5d1f7d9118e216e.webp?size=240"
                             alt="logo"
@@ -33,11 +33,11 @@ export default function HomePage() {
 
                         <div className="flex flex-col items-center gap-2 text-primary-50">
                             <h1 className="font-space-grotesk font-bold text-2xl">Jakush</h1>
-                            <p className="font-inter text-lg">Medior Software Engineer</p>
+                            <p className="font-inter text-lg text-center">Medior Software Engineer</p>
 
                             <hr className="border border-accent-600 w-2/3" />
 
-                            <p className="font-inter text-sm text-accent-400">5+ years building software</p>
+                            <p className="font-inter text-sm text-accent-400 text-center">5+ years building software</p>
 
                             <div className="flex flex-col items-center gap-2 text-secondary-400 mt-4">
                                 <a href="mailto:hello@jakush.dev" className="font-inter flex gap-1 items-center text-[0.95rem] hover:text-hover-200 transition-all duration-300"><IconMail size={20} /> hello@jakush.dev</a>
@@ -56,7 +56,7 @@ export default function HomePage() {
                 </div>
 
 
-                <div className="sm:col-span-2 w-full flex flex-col gap-24 h-full px-32 py-32">
+                <div className="sm:col-span-2 w-full flex flex-col gap-24 h-full px-32 py-32 max-md:gap-16 max-sm:px-8 max-md:py-0 max-md:pt-16">
                     <SkillCard />
                     <ExperienceCard />
                 </div>

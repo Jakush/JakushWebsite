@@ -41,7 +41,7 @@ export default function SkillCard() {
         <ContentCategory sectionId={"skills"}>
             <ContentHeader>Core Skills</ContentHeader>
             <ContentDividerLine />
-            <div className="grid grid-cols-2 gap-x-4 gap-y-8">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 max-md:grid-cols-1">
                 {skills.map((skillCat, index) => (
                     <div className="flex flex-col gap-2" key={index}>
                         <h3 className="font-space-grotesk text-accent-400 flex gap-1 items-center">{skillCat.title}</h3>

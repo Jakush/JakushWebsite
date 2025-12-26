@@ -52,23 +52,23 @@ export default function ExperienceCard() {
             <ContentHeader>Experience</ContentHeader>
             <ContentDividerLine />
             <div className="py-8">
-                <div className="flex flex-col gap-8 border-l border-secondary-500 px-8">
+                <div className="flex flex-col gap-8 border-l border-secondary-500 px-8 max-sm:px-1 max-[400px]:border-l-0">
                     {sortedExperiences.map((exp, index) => {
                         const showYear =
                             index === 0 || exp.from !== sortedExperiences[index - 1].from;
 
                         return (
                             <div key={`${exp.title}-${index}`} className="relative flex flex-col gap-2 group">
-                                <div className="absolute -left-8 top-1/2 size-2 rounded-full bg-primary-400 -translate-y-1/2 -translate-x-1/2 group-hover:animate-pulse" />
+                                <div className="absolute -left-8 top-1/2 size-2 rounded-full bg-primary-400 -translate-y-1/2 -translate-x-1/2 group-hover:animate-pulse max-sm:-left-1 max-[400px]:hidden" />
 
                                 {showYear && (
-                                    <p className="absolute -left-18 top-1/2 text-primary-500 -translate-y-1/2 -translate-x-1/2 font-inter">
+                                    <p className="absolute -left-18 top-1/2 text-primary-500 -translate-y-1/2 -translate-x-1/2 font-inter max-sm:hidden">
                                         {exp.from}
                                     </p>
                                 )}
 
                                 <div className="rounded-xl p-2">
-                                    <div className="flex justify-between gap-4">
+                                    <div className="flex justify-between gap-4 max-[560px]:justify-start max-[560px]:flex-col max-[560px]:gap-0">
                                         <h4 className="font-space-grotesk font-bold text-lg">
                                             {exp.title}
                                         </h4>
