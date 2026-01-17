@@ -19,7 +19,7 @@ const socials = [
 
 export default function HomePage() {
     return (
-        <main className="px-16 mx-auto w-screen min-h-screen max-md:px-12 max-sm:px-8 max-[300px]:px-1">
+        <main className="px-16 mx-auto w-full min-h-screen max-md:px-12 max-sm:px-8 max-[300px]:px-1">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-md:flex flex-col">
                 <div className="sm:col-span-1 border-r border-accent-600 py-10 max-md:border-r-0 max-md:border-b max-md:py-8">
                     <div className="sticky top-1/2 -translate-y-1/2 w-full flex flex-col gap-4 items-center max-md:top-0 max-md:translate-y-0">
