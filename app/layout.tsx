@@ -16,6 +16,8 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Jakush",
   description: "The personal website of Jakub Šulc (aka Jakush). Projects, experience, and background.",
+  authors: [ { name: "Jakush" } ],
+  keywords: [ "Jakush", "portfolio", "jakush.dev" ],
 };
 
 export default function RootLayout({
