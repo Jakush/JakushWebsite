@@ -4,13 +4,13 @@ import "./globals.css";
 import {ReactNode} from "react";
 
 const inter = Inter({
-    variable: "--font-inter",
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 });
 
 const spaceGrotesk = Space_Grotesk({
-    variable: "--font-space-grotesk",
-    weight: ["300", "400", "500", "600", "700"]
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"]
 })
 
 export const metadata: Metadata = {
