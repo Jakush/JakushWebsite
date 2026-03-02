@@ -2,38 +2,38 @@ import ContentCategory from "@/app/components/content-item/content-category";
 import ContentHeader from "@/app/components/content-item/content-header";
 import ContentDividerLine from "@/app/components/content-item/content-divider-line";
 import {IconDeviceLaptop, IconLanguage, IconStackFront} from "@tabler/icons-react";
-import React, {ReactNode} from "react";
+import {ReactNode} from "react";
 
 interface SkillCategory {
-    title: ReactNode;
-    skills: string[];
+  title: ReactNode;
+  skills: string[];
 }
 
 const skills: SkillCategory[] = [
-    {
-        title: (
-            <>
-                <IconLanguage size="22" /> Languages
-            </>
-        ),
-        skills: [ "C#", "C++", "Java", "TypeScript" ],
-    },
-    {
-        title: (
-            <>
-                <IconStackFront size="22" /> Backend
-            </>
-        ),
-        skills: [ "Nest.js", "MongoDB", "MySQL", "Javalin" ],
-    },
-    {
-        title: (
-            <>
-                <IconDeviceLaptop size="22" /> Frontend
-            </>
-        ),
-        skills: [ "Next.js", "HTML", "CSS" ],
-    },
+  {
+    title: (
+      <>
+        <IconLanguage size="22" /> Languages
+      </>
+    ),
+    skills: [ "C#", "C++", "Java", "TypeScript" ],
+  },
+  {
+      title: (
+          <>
+              <IconStackFront size="22" /> Backend
+          </>
+      ),
+      skills: [ "Nest.js", "MongoDB", "MySQL", "Javalin" ],
+  },
+  {
+      title: (
+          <>
+              <IconDeviceLaptop size="22" /> Frontend
+          </>
+      ),
+      skills: [ "Next.js", "HTML", "CSS" ],
+  },
 ];
 
 export default function SkillCard() {
