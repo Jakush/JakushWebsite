@@ -42,7 +42,7 @@ export default function HomePage() {
               <p 
                 className="font-inter text-sm text-accent-400 text-center"
               >
-                Member of <a href="https://phast.gg/" className="text-secondary-400 hover:text-hover-200 transition-all duration-300">Phast.gg</a>
+                Member of <a href="https://phast.gg/" target="_blank" className="text-secondary-400 hover:text-hover-200 transition-all duration-300">Phast.gg</a>
               </p>
 
               <div className="flex flex-col items-center gap-2 text-secondary-400 mt-4">
